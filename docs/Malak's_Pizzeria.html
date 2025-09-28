@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Malak's Pizzeria</title>
+        <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #fffaf2;
+      color: #333;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffcc66;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    header img {
+      border-radius: 50%;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+    }
+
+    nav li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e63946;
+    }
+
+    /* Horizontal rule */
+    hr {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    /* Menu */
+    section h2 {
+      margin: 20px 0;
+      color: #e63946;
+      font-size: 1.5rem;
+    }
+
+    .Menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    article {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    article img {
+      width: 50%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Form */
+    form {
+      background: #fcefdc;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    form input[type="number"] {
+      width: 60px;
+      margin: 5px 0;
+    }
+
+    form label {
+      display: block;
+      margin: 8px 0;
+    }
+
+    textarea {
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    input[type="submit"] {
+      background: #e63946;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background: #b71c1c;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
+        </style>
+    </head>
+
+
+
+    <body>
+<header>
+
+<img width="150" id="header-img" src="https://images.deliveryhero.io/image/talabat/restaurants/Logo637973054252940976.jpg?width=180">
+<h1>Malak's Pizzeria</h1>
+<nav>
+    <ul>
+        <li><a href="#Menu">Menu</a></li>
+       <li> <a href="#order-form">Order-form</a></li>
+    </ul>
+</nav>
+</header>
+
+<hr><br>
+
+<main>
+
+    <section>
+<h2>Menu</h2>
+
+<article>
+<img alt="Mushroom Pizza" src="https://www.lifeisbutadish.com/wp-content/uploads/2016/09/Garlic-Mushroom-Spinach-Pizza.jpg">
+<h3>Mushroom Pizza</h3>
+<p>It’s covered with mozzarella cheese, goat cheese, savory sautéed mushrooms, and fresh herbs.<br> <i>150</i></p>
+</article>
+
+<article>
+<img alt="Margherita Pizza" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsCa96ux1qAa5_IdeF3rrfBJ9PfF_hrI1rlA&s">
+<h3>Margherita Pizza</h3>
+<p>a pizza dough base, a sauce made from crushed tomatoes (often San Marzano tomatoes), fresh mozzarella cheese, and fresh basil leaves.<br> <i>100</i></p>
+</article>
+
+<article>
+<img alt="steak Pizza" src="https://www.thereciperebel.com/wp-content/uploads/2014/05/philly-cheesesteak-pizza-www.thereciperebel.com-1200-16-of-52.jpg">
+<h3>Steak Pizza</h3>
+<p>Pizza crust is topped with American cheese, sirloin, mushrooms, bell pepper, and onion.<br> <i>250</i></p>
+</article>
+
+    </section>
+
+
+    <section>
+<h2>Place Your Order</h2>
+<form>
+Mushroom Pizza: <input type="number" min="0">
+<br>
+Margherita Pizza: <input type="number" min="0">
+<br>
+Steak Pizza: <input type="number" min="0">
+<br>
+
+<label><input type="checkbox"> extra tomatoes</label>
+<label><input type="checkbox"> extra lettuce</label>
+<label><input type="checkbox"> extra jalapenos</label>
+<br>
+<textarea id="data-entry" rows="7" cols="42"  placeholder="Enter your special request here!"></textarea>
+<label><input type="submit" value="Go To Checkout"></label>
+</form>
+
+</section>
+
+</main>
+
+
+
+<footer>
+    <p>Made with love by Malakalkholy ©</p>
+</footer>
+
+
+</body>
+</html>
